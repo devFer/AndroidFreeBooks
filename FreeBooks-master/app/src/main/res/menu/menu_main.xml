@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ioc.xtec.cat.freebooks.PrincipalActivity">
+    <item
+        android:id="@+id/app_logout"
+        android:icon="@android:drawable/ic_menu_set_as"
+        android:orderInCategory="100"
+        android:title="@string/app_logout"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/app_editUser"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:orderInCategory="200"
+        android:title="@string/app_editUser"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/app_refresh"
+        android:icon="@android:drawable/ic_popup_sync"
+        android:orderInCategory="300"
+        android:title="@string/app_refresh"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/app_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:orderInCategory="400"
+        android:title="@string/app_search"
+        app:actionViewClass="android.widget.SearchView" />
+    <item
+        android:id="@+id/app_bookings"
+        android:icon="@android:drawable/ic_input_get"
+        android:orderInCategory="500"
+        android:title="@string/app_bookings"
+        app:showAsAction="always" />
+</menu>

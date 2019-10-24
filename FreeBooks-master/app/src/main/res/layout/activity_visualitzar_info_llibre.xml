@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="20dp"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imatgeLlibre"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="112dp"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/imatge_llibre"
+        app:layout_constraintBottom_toTopOf="@+id/btnReserva"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnReserva"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="112dp"
+        android:layout_marginTop="120dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="@string/boto_reserva"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelTitol"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="184dp"
+        android:text="@string/label_titol"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textTitol"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textTitol"
+        android:layout_width="260dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="184dp"
+        android:text="@string/text_titol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelAutor"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:text="@string/label_autor"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textAutor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textAutor"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="220dp"
+        android:text="@string/text_autor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelDescripcio"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="256dp"
+        android:text="@string/label_descripcio"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textDescripcio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textDescripcio"
+        android:layout_width="260dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="256dp"
+        android:text="@string/text_descripcio"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelEditorAny"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:text="@string/label_editor_i_any"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textEditorAny"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textEditorAny"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="340dp"
+        android:text="@string/text_editoriany"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelPagines"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="376dp"
+        android:text="@string/label_pagines"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textPagines"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textPagines"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="376dp"
+        android:text="@string/text_pagines"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelIdioma"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="412dp"
+        android:text="@string/label_idioma"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textIdioma"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textIdioma"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="412dp"
+        android:text="@string/text_idioma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelISBN"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="456dp"
+        android:text="@string/label_isbn"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textISBN"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textISBN"
+        android:layout_width="260dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="456dp"
+        android:text="@string/text_isbn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTornar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="112dp"
+        android:layout_marginTop="504dp"
+        android:text="@string/boto_tornar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

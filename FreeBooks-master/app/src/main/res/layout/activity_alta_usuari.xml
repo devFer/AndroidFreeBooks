@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="20dp"
+    android:weightSum="1">
+
+
+    <ImageView
+        android:id="@+id/imageAddUser"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="276dp"
+        android:contentDescription="@string/imageAddUser"
+        android:src="@drawable/adduser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titolAltaUsuari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="104dp"
+        android:text="@string/titol_alta"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/labelUsuari"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="@string/usuari"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textUsuari"
+        app:layout_constraintEnd_toStartOf="@+id/textUsuari"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/textUsuari"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/introdueix_usuari"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/labelUsuari"
+        app:layout_constraintTop_toBottomOf="@+id/titolAltaUsuari">
+
+        <requestFocus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </EditText>
+
+
+    <TextView
+        android:id="@+id/labelContrasenya"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="@string/contrasenya"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textContrasenya"
+        app:layout_constraintEnd_toStartOf="@+id/textContrasenya"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/textContrasenya"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="@string/introdueix_contrasenya"
+        android:inputType="textPassword"
+        android:labelFor="@+id/labelContrasenya"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/labelContrasenya"
+        app:layout_constraintTop_toTopOf="@+id/textUsuari"></EditText>
+
+    <TextView
+        android:id="@+id/labelConfirmaContrasenya"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="@string/confirma_contrasenya"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textConfirmaContrasenya"
+        app:layout_constraintEnd_toStartOf="@+id/textConfirmaContrasenya"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/textMail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:hint="@string/introdueix_mail"
+        android:inputType="textPersonName"
+        android:labelFor="@+id/labelConfirmaMail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/labelMail"
+        app:layout_constraintTop_toTopOf="@+id/textConfirmaContrasenya"></EditText>
+
+    <TextView
+        android:id="@+id/labelMail"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="@string/mail"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textMail"
+        app:layout_constraintEnd_toStartOf="@+id/textConfirmaContrasenya"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/textConfirmaContrasenya"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="@string/introdueix_confirma_contrasenya"
+        android:inputType="textPassword"
+        android:labelFor="@+id/labelMail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/labelConfirmaContrasenya"
+        app:layout_constraintTop_toTopOf="@+id/textContrasenya"></EditText>
+
+    <Button
+        android:id="@+id/buttonDonarAlta"
+        style="@android:style/Widget.DeviceDefault.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="188dp"
+        android:text="@string/boto_alta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonCancelar"
+        app:layout_constraintTop_toBottomOf="@+id/textContrasenya" />
+
+    <Button
+        android:id="@+id/buttonCancelar"
+        style="@android:style/Widget.DeviceDefault.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/boto_cancelar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonDonarAlta"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDonarAlta"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/missatge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDonarAlta" />
+
+
+</android.support.constraint.ConstraintLayout>
